@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.flex, .card-body-info, .card-body, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  background-color: #19a2ae;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.top-bg {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: -299px;
+  right: 182px;
+}
+@media (min-width: 1440px) {
+  .top-bg {
+    width: 900px;
+    height: 900px;
+    top: -469px;
+    left: -427px;
+  }
+}
+.top-bg img {
+  width: 100%;
+}
+
+.bg-bottom {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  bottom: -216px;
+  right: -330px;
+}
+@media (min-width: 1440px) {
+  .bg-bottom {
+    width: 900px;
+    height: 900px;
+    bottom: -664px;
+    left: 50%;
+  }
+}
+.bg-bottom img {
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  height: 360px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 1;
+}
+.card-bg {
+  margin-bottom: -5px;
+}
+.card-bg img {
+  width: 100%;
+}
+.card-body {
+  flex-direction: column;
+}
+.card-body-img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
+  top: -50px;
+}
+.card-body-info {
+  position: relative;
+  top: -30px;
+  flex-direction: column;
+}
+.card-body-info p {
+  color: #2d3248;
+  font-weight: 700;
+}
+.card-body-info p span {
+  color: #6a6f81;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.card-body-info span {
+  color: #6a6f81;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ccc;
+  padding: 2em 0;
+}
+.card-footer-statics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-footer-statics strong {
+  color: #2d3248;
+}
+.card-footer-statics span {
+  margin-top: 5px;
+  font-size: 11px;
+  color: #6a6f81;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */

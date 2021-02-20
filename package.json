@@ -1,0 +1,17 @@
+{
+  "name": "profile-card-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "Mohand Abdalrahman",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "~4.1.10",
+    "sass": "~1.32.8"
+  }
+}

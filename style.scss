@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+// variables
+$primary-bg-color: hsl(185, 75%, 39%);
+$primary-color: hsl(229, 23%, 23%);
+$secondary-color: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+// helper class
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  background-color: $primary-bg-color;
+  @extend .flex;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.top-bg {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: -299px;
+  right: 182px;
+  @media (min-width: 1440px) {
+    width: 900px;
+    height: 900px;
+    top: -469px;
+    left: -427px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.bg-bottom {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  bottom: -216px;
+  right: -330px;
+  @media (min-width: 1440px) {
+    width: 900px;
+    height: 900px;
+    bottom: -664px;
+    left: 50%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+// start card
+.card {
+  width: 100%;
+  max-width: 300px;
+  height: 360px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 1;
+  &-bg {
+    margin-bottom: -5px;
+    img {
+      width: 100%;
+    }
+  }
+  &-body {
+    @extend .flex;
+    flex-direction: column;
+    &-img {
+      border-radius: 50%;
+      border: 2px solid #fff;
+      position: relative;
+      top: -50px;
+    }
+    &-info {
+      position: relative;
+      top: -30px;
+      @extend .flex;
+      flex-direction: column;
+      p {
+        color: $primary-color;
+        font-weight: 700;
+        span {
+          color: $secondary-color;
+          font-weight: 400;
+          margin-left: 5px;
+        }
+      }
+      span {
+        color: $secondary-color;
+        font-size: 13px;
+        margin-top: 5px;
+      }
+    }
+  }
+  &-footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+    padding: 2em 0;
+    &-statics {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      strong {
+        color: $primary-color;
+      }
+      span {
+        margin-top: 5px;
+        font-size: 11px;
+        color: $secondary-color;
+      }
+    }
+  }
+}
